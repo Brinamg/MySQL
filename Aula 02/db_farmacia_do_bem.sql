@@ -49,6 +49,6 @@ select tb_produto.nome as nome, tb_produto.preco as preco, tb_categoria.classe a
 from tb_produto inner join tb_categoria
 on tb_categoria.id = tb_produto.categoria_id;
 
-select tb_produto.nome as nome, tb_produto.preco as preco, tb_categoria.classe 
-from tb_produto inner join tb_categoria
-where tb_categoria.classe like "%hig%";
+select tb_produto.nome as nome, tb_produto.preco as preco, tb_categoria.classe as classe
+from tb_produto inner join tb_categoria on tb_categoria.id = tb_produto.categoria_id
+where tb_categoria.classe like "%generico%";
